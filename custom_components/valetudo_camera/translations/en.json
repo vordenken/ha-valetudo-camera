@@ -1,0 +1,69 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Valetudo",
+        "description": "Valetudo itself speaks plain HTTP (e.g. http://192.168.1.50). A username and password are then sent unencrypted within your network.",
+        "data": {
+          "url": "Base URL",
+          "username": "Username",
+          "password": "Password"
+        }
+      },
+      "certificate": {
+        "title": "Certificate not trusted",
+        "description": "The TLS certificate of {url} could not be verified, for example because it is self-signed. Submit to connect without certificate verification, or close this dialog to cancel."
+      },
+      "reauth_confirm": {
+        "title": "Update Valetudo credentials",
+        "description": "Update credentials for {name}.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure Valetudo",
+        "description": "Leave the password empty to keep the current one. Clear the username to connect without authentication.",
+        "data": {
+          "url": "Base URL",
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not connect to Valetudo.",
+      "invalid_auth": "The username or password was rejected.",
+      "not_supported": "This robot does not support Valetudo duststreaming.",
+      "streaming_disabled": "Enable duststreaming in the Valetudo interface first."
+    },
+    "abort": {
+      "already_configured": "This robot is already configured.",
+      "already_in_progress": "Setup for this robot is already in progress.",
+      "reauth_successful": "The credentials were updated.",
+      "reconfigure_successful": "The connection settings were updated.",
+      "unique_id_mismatch": "This URL belongs to a different robot.",
+      "reauth_entry_not_found": "The existing configuration could not be found."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Camera options",
+        "data": {
+          "snapshot_cache_seconds": "Snapshot cache (seconds)",
+          "mjpeg_fps": "MJPEG frame rate",
+          "mjpeg_quality": "MJPEG quality (2 is best)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "camera": {
+      "camera": {
+        "name": "Camera"
+      }
+    }
+  }
+}

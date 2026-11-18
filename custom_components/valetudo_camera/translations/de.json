@@ -1,0 +1,69 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mit Valetudo verbinden",
+        "description": "Valetudo selbst spricht nur HTTP (z. B. http://192.168.1.50). Benutzername und Passwort werden dabei unverschlüsselt im lokalen Netz übertragen.",
+        "data": {
+          "url": "Basis-URL",
+          "username": "Benutzername",
+          "password": "Passwort"
+        }
+      },
+      "certificate": {
+        "title": "Zertifikat nicht vertrauenswürdig",
+        "description": "Das TLS-Zertifikat von {url} konnte nicht geprüft werden, etwa weil es selbstsigniert ist. Mit „OK“ wird die Verbindung ohne Zertifikatsprüfung eingerichtet; zum Abbrechen diesen Dialog schließen."
+      },
+      "reauth_confirm": {
+        "title": "Valetudo-Zugangsdaten aktualisieren",
+        "description": "Zugangsdaten für {name} aktualisieren.",
+        "data": {
+          "username": "Benutzername",
+          "password": "Passwort"
+        }
+      },
+      "reconfigure": {
+        "title": "Valetudo neu konfigurieren",
+        "description": "Das Passwort leer lassen, um das bisherige zu behalten. Den Benutzernamen leeren, um ohne Anmeldung zu verbinden.",
+        "data": {
+          "url": "Basis-URL",
+          "username": "Benutzername",
+          "password": "Passwort"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zu Valetudo nicht möglich.",
+      "invalid_auth": "Benutzername oder Passwort wurde abgewiesen.",
+      "not_supported": "Dieser Roboter unterstützt Valetudo Duststreaming nicht.",
+      "streaming_disabled": "Duststreaming zuerst in der Valetudo-Oberfläche aktivieren."
+    },
+    "abort": {
+      "already_configured": "Dieser Roboter ist bereits eingerichtet.",
+      "already_in_progress": "Die Einrichtung dieses Roboters läuft bereits.",
+      "reauth_successful": "Die Zugangsdaten wurden aktualisiert.",
+      "reconfigure_successful": "Die Verbindungseinstellungen wurden aktualisiert.",
+      "unique_id_mismatch": "Diese URL gehört zu einem anderen Roboter.",
+      "reauth_entry_not_found": "Die bestehende Konfiguration wurde nicht gefunden."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Kameraoptionen",
+        "data": {
+          "snapshot_cache_seconds": "Snapshot-Cache (Sekunden)",
+          "mjpeg_fps": "MJPEG-Bildrate",
+          "mjpeg_quality": "MJPEG-Qualität (2 ist beste Qualität)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "camera": {
+      "camera": {
+        "name": "Kamera"
+      }
+    }
+  }
+}
