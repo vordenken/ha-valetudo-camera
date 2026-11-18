@@ -13,6 +13,9 @@ jobs:
   tests:
     name: Lint and tests
     runs-on: ubuntu-latest
+    # A normal run takes under a minute; without a limit a stalled package
+    # download would block the job for up to six hours.
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
 
