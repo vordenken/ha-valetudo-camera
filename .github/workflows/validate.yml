@@ -16,6 +16,7 @@ jobs:
   hassfest:
     name: Home Assistant manifest and translations
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
       - uses: home-assistant/actions/hassfest@master
@@ -23,6 +24,7 @@ jobs:
   hacs:
     name: HACS repository rules
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: hacs/action@main
         with:
