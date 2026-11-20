@@ -1,5 +1,7 @@
 # Camera for Valetudo – Home Assistant integration
 
+[![HACS Default](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://hacs.xyz)
+
 Shows the live camera image of a [Valetudo](https://valetudo.cloud) robot vacuum
 as a camera entity in Home Assistant. Everything stays in your local network.
 
@@ -30,9 +32,8 @@ The button opens this repository in your own Home Assistant, in the Marketplace
 or in HACS. Download **Camera for Valetudo** there and restart Home Assistant if it
 asks you to.
 
-To add it by hand instead, add
-`https://github.com/vordenken/ha-valetudo-camera` as a custom repository of the
-type **Integration** in the Marketplace or in HACS, then download it.
+You can also search for **Camera for Valetudo** in the Marketplace or in HACS
+directly, since it is part of the default HACS repositories.
 
 Without either of them, copy the folder `custom_components/valetudo_camera`
 into the `custom_components` folder of your Home Assistant configuration and
